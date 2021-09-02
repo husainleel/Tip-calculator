@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <title>Tip calculator</title>
+
+
+</head>
+
+<body>
+  <h2>Splitter</h2>
+  <main>
+    <div class="details">
+
+      <div class="bill">Bill</div>
+      <div class="bill-amt" tabindex="1">
+        <span>$</span>
+        <input type="number" class="mainInput" onfocus="focusFunc(1)" onblur="blurFunc(1)"
+          oninput="inputBill(this.value)" onclick="this.select()" name="bill" id="bill-amt-num" placeholder="0">
+      </div>
+      <div class="sel-tip">Select Tip %</div>
+      <div class="percentages">
+        <input class="button" type="button" value="5%">
+        <input class="button focus" type="button" value="10%">
+        <input class="button" type="button" value="15%">
+        <br>
+        <input class="button" type="button" value="25%">
+        <input class="button" type="button" value="50%">
+        <input class="button" type="button" value="100%">
+
+
+        <br>
+      </div>
+
+      <div class="num-ppl">Number of People</div>
+      <div class="num-ppl-input">
+        <span>$</span>
+        <input type="number" class="mainInput" name="people" onfocus="focusFunc(2)" onblur="blurFunc(2)"
+          oninput="inputppl(this.value)" onclick="this.select()" id="num-ppl-num" placeholder="1">
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="amt">
+        <div class="tip-amt">
+          <span>Tip Amount</span> <br>
+          <span>/ person</span>
+        </div>
+        <div class="tip-amt-num">0</div>
+      </div>
+
+      <div class="prn">
+        <div>
+          <span>Total</span> <br>
+          <span>/ person</span>
+        </div>
+        <div class="ttl-prn-num">0</div>
+      </div>
+
+      <button onclick="reset()">Reset</button>
+    </div>
+  </main>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

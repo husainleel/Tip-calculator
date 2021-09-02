@@ -1,0 +1,183 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: hsl(183, 100%, 15%);
+}
+
+main {
+    background-color: white;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+
+
+}
+
+
+.details {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bill {
+    margin-top: 0.5rem;
+}
+
+.bill-amt {
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.4s;
+}
+
+.bill-amt.focus,
+.num-ppl-input.focus {
+    background-color: hsl(185, 41%, 84%);
+}
+
+#bill-amt-num,
+#num-ppl-num {
+    background-color: inherit;
+    border-style: none;
+    text-align: right;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mainInput:focus {
+    outline: none;
+
+}
+
+
+
+.sel-tip {
+    margin-top: 1.5rem;
+}
+
+.percentages {
+    margin-bottom: 1.25rem;
+}
+
+.percentages .button {
+    border-style: none;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: inherit;
+    font-size: 0.8125rem;
+
+    height: 2rem;
+    width: 4.5rem;
+    margin: 0.25rem;
+    margin-right: 0;
+    border-radius: 0.25rem;
+}
+
+.percentages .focus {
+    background-color: hsl(172, 67%, 45%);
+    outline: none;
+}
+
+.percentages .button:nth-of-type(1),
+.percentages .button:nth-of-type(4) {
+    margin-left: 0;
+}
+
+.num-ppl-input {
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.4s;
+}
+
+.result {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    padding: 1.5rem 1.5rem 1rem;
+    width: 13rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.amt,
+.prn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.625rem;
+}
+
+.amt {
+    margin-bottom: 1.5rem;
+}
+
+.ttl-prn-num,
+.tip-amt-num {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.result button {
+    border-style: none;
+    border-radius: 1rem;
+    margin: 5rem 1rem 0;
+    padding: 0.25rem;
+    background-color: hsl(172, 67%, 45%);
+    font-family: inherit;
+    color: hsl(183, 100%, 15%);
+    font-size: inherit;
+
+}
+
+
+@media (max-width: 650px) {
+
+    body {
+        min-height: auto;
+    }
+
+    main {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .details {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
